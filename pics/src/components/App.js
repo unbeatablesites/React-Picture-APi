@@ -13,6 +13,7 @@ class App extends React.Component {
           "Client-ID 0286e3369a6897edef448e5f73cf2c3054447ffb44b06a3c0a84b2d77e9ae70b"
       }
     });
+
     this.setState({ images: response.data.results });
   }
 
@@ -20,6 +21,7 @@ class App extends React.Component {
     return (
       <div className="ui container" style={{ marginTop: "10px" }}>
         <SearchBar onSubmit={this.onSearchSubmit} />
+        Found:{this.state.images.length} images
       </div>
     );
   }
