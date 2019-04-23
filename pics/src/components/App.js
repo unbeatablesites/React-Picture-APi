@@ -1,5 +1,5 @@
 import React from "react";
-import unsplash from "../api/unsplash";
+import unsplash from "../api/Unsplash";
 import SearchBar from "./SearchBar";
 
 class App extends React.Component {
