@@ -2,14 +2,8 @@ import React from "react";
 import { IncomingMessage } from "http";
 
 const ImageList = props => {
-  const images = props.images.map(image => {
-    return (
-      <img
-        alt={IncomingMessage.description}
-        key={image.id}
-        src={image.urls.regular}
-      />
-    );
+  const images = props.images.map(({ descriptio, id, url }) => {
+    return <img alt={description} key={id} src={urls.regular} />;
   });
   return <div>{images}</div>;
 };
