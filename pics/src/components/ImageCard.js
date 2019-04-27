@@ -11,3 +11,5 @@ class ImageCard extends React.compnent {
     );
   }
 }
+
+export default ImageCard;
