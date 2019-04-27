@@ -6,5 +6,5 @@
 }
 .image-list img {
   width: 250px;
-  grid-row-end: auto;
+  grid-row-end: span 2px;
 }
